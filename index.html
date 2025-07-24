@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beyond Metrics</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+  <link rel="stylesheet" type="text/css" href="./Assets/tailwind/output.css" />
+
+</head>
+
+<body>
+  <header class="bg-slate-100 p-1 *:m-2 md:flex flex-col sm:flex-row sm:justify-between items-center shadow-md">
+    <!--Logo / Website name-->
+    <div class="flex justify-between">
+      <button class="flex flex-col items-start cursor-pointer" type="button" onclick="loadPage(Main(), 'Firms')">
+        <span class="text-xl text-slate-700 font-bold">📈 Beyond Metrics</span>
+        <span class="font-bold text-sm text-slate-600 mt-1"><i>Seeing Value Beyond Metrics</i></span>
+      </button>
+      <span class="hamMenu flex flex-col *:m-[0.5vh] mr-2 sm:hidden *:transition *:duration-300 *:ease-in-out"
+        data-state="off" tabindex="0" onclick="toggleMenu(this)">
+        <p class="w-[35px] border-2 rounded-lg border-slate-500"></p>
+        <p class="w-[35px] border-2 rounded-lg border-slate-500"></p>
+        <p class="w-[35px] border-2 rounded-lg border-slate-500"></p>
+      </span>
+    </div>
+    <!--Nav-->
+    <nav
+      class="max-h-[0px] overflow-y-hidden sm:max-h-none transition-[max-h] duration-1000 ease-linear flex flex-col justify-start *:text-slate-700 *:text-lg *:font-bold *:m-3 *:text-start *:cursor-pointer sm:flex-row sm:mr-20">
+      <button class="hover:translate-y-1 transition-transform" onclick="loadPage(FirmComparison(), 'Compare Firms')">
+        <img src="" />
+        <span>Compare Firms</span>
+      </button>
+      <button class="hover:translate-y-1 transition-transform" onclick="loadPage(TechInfo(), 'Technical Information')">
+        <img src="" />
+        <span>Technical Information</span>
+      </button>
+      <button class=" hover:translate-y-1 transition-transform" onclick="loadPage(AboutUs(), 'About Us')">
+        <img src="" />
+        <span>About Us</span>
+      </button>
+    </nav>
+  </header>
+  <main>
+  </main>
+  <script src="./Assets/scripts/main.js"></script>
+</body>
+
+</html>
